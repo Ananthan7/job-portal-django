@@ -1,0 +1,9 @@
+{% extends 'home.html' %}
+{% block body-block %}
+<h2>signup</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit">
+</form>
+{% endblock %}
